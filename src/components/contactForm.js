@@ -96,7 +96,7 @@ const ContactForm = () => {
         transition={{ duration: 0.7, delay: 0.2 }}
         className="text-gray-500 text-sm px-2 text-center"
       >
-        Any other queries contact @{" "}
+        Any other queries contact us on <br />{" "}
         <a className="text-white" href="mailto:your.email@example.com">
           email@example.com
         </a>
