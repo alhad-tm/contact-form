@@ -25,7 +25,7 @@ const ContactForm = () => {
   }; 
 
   return (
-    <div className="flex flex-col gap-8 items-center justify-center  p-8 ">
+    <div className="flex flex-col gap-8 items-center justify-center  p-8 w-full">
 
  <span>Contact Us</span>
 
@@ -33,8 +33,8 @@ const ContactForm = () => {
       <input className="input-box" type="text" name="name" value={formData.name} onChange={handleChange} placeholder="Name" />
       <input  className="input-box" type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email" />
       <textarea  className="input-box" name="message" value={formData.message} onChange={handleChange} placeholder="Message"></textarea>
-      <button className="submit-btn" type="submit" disabled={loading}>{loading ? 'Sending...' : 'Submit'}</button>
-      {success && <p>Message sent successfully!</p>}
+      <button className="btn" type="submit" disabled={loading}>{loading ? 'Sending...' : 'Submit'}</button>
+      {success && <p className="text-[12px]">Message sent successfully!</p>}
     </form>
     </div>
   );
